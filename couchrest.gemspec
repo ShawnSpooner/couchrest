@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["J. Chris Anderson", "Matt Aimonetti", "Marcos Tapajos", "Will Leinweber", "Sam Lown"]
-  s.date = %q{2010-08-21}
+  s.date = %q{2010-10-18}
   s.description = %q{CouchRest provides a simple interface on top of CouchDB's RESTful HTTP API, as well as including some utility scripts for managing views and attachments.}
   s.email = %q{jchris@apache.org}
   s.extra_rdoc_files = [
@@ -96,16 +96,16 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rest-client>, ["~> 1.5.1"])
       s.add_runtime_dependency(%q<mime-types>, ["~> 1.15"])
-      s.add_runtime_dependency(%q<json>, ["~> 1.4.6"])
+      s.add_runtime_dependency(%q<json_pure>, ["~> 1.4.6"])
     else
       s.add_dependency(%q<rest-client>, ["~> 1.5.1"])
       s.add_dependency(%q<mime-types>, ["~> 1.15"])
-      s.add_dependency(%q<json>, ["~> 1.4.6"])
+      s.add_dependency(%q<json_pure>, ["~> 1.4.6"])
     end
   else
     s.add_dependency(%q<rest-client>, ["~> 1.5.1"])
     s.add_dependency(%q<mime-types>, ["~> 1.15"])
-    s.add_dependency(%q<json>, ["~> 1.4.6"])
+    s.add_dependency(%q<json_pure>, ["~> 1.4.6"])
   end
 end
 
